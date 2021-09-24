@@ -22,16 +22,16 @@
     <ClCompile Include="SelectRangeEveryReversing.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="avs\alignment.h" />
     <ClInclude Include="avs\avisynth.h" />
     <ClInclude Include="avs\avisynth_c.h" />
-    <ClInclude Include="avs\capi.h" />
-    <ClInclude Include="avs\config.h" />
-    <ClInclude Include="avs\cpuid.h" />
-    <ClInclude Include="avs\minmax.h" />
-    <ClInclude Include="avs\posix.h" />
-    <ClInclude Include="avs\types.h" />
-    <ClInclude Include="avs\win.h" />
+    <ClInclude Include="avs\avs\alignment.h" />
+    <ClInclude Include="avs\avs\capi.h" />
+    <ClInclude Include="avs\avs\config.h" />
+    <ClInclude Include="avs\avs\cpuid.h" />
+    <ClInclude Include="avs\avs\minmax.h" />
+    <ClInclude Include="avs\avs\posix.h" />
+    <ClInclude Include="avs\avs\types.h" />
+    <ClInclude Include="avs\avs\win.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -120,8 +120,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;SELECTRANGEEVERYREVERSING_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -129,6 +130,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;./lib/x32/AviSynth.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -154,8 +156,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;SELECTRANGEEVERYREVERSING_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -163,6 +166,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;./lib/x64/AviSynth.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

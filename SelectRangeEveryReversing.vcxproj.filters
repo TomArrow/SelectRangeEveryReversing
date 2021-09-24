@@ -23,34 +23,34 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="avs\config.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
-    <ClInclude Include="avs\cpuid.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
-    <ClInclude Include="avs\minmax.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
-    <ClInclude Include="avs\posix.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
-    <ClInclude Include="avs\types.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
-    <ClInclude Include="avs\win.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
-    <ClInclude Include="avs\alignment.h">
-      <Filter>Header Files\avs</Filter>
-    </ClInclude>
     <ClInclude Include="avs\avisynth.h">
       <Filter>Header Files\avs</Filter>
     </ClInclude>
     <ClInclude Include="avs\avisynth_c.h">
       <Filter>Header Files\avs</Filter>
     </ClInclude>
-    <ClInclude Include="avs\capi.h">
+    <ClInclude Include="avs\avs\alignment.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\capi.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\config.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\cpuid.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\minmax.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\posix.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\types.h">
+      <Filter>Header Files\avs</Filter>
+    </ClInclude>
+    <ClInclude Include="avs\avs\win.h">
       <Filter>Header Files\avs</Filter>
     </ClInclude>
   </ItemGroup>
