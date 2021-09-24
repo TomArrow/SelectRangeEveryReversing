@@ -53,5 +53,8 @@
     <ClInclude Include="avs\avs\win.h">
       <Filter>Header Files\avs</Filter>
     </ClInclude>
+    <ClInclude Include="SelectRangeEveryReversing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
