@@ -1,3 +1,15 @@
+// The following code is mostly adapted from the InvertNeg example and avs_core/filters/field.cpp from AviSynth+
+// I'm bad at this legal stuff so I'm not sure what other stuff I should note here.
+// 
+// This is what the original file says at the top:
+// Avisynth v2.5.  Copyright 2002 Ben Rudiak-Gould et al.
+// http://www.avisynth.org
+//
+// Also says it uses GNU General Public License version 2 or above.
+// Not sure if I have to include the entire block of license stuff here.
+// If I do, let me know and I will.
+// 
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "avs/avs/minmax.h"
