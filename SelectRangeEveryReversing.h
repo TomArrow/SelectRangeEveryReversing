@@ -1,11 +1,18 @@
 
 #include "avs/avisynth.h"
 #include "avs/avisynth.h"
+#include <string>
 
+//#define WRITEDEBUGINFO
 class SelectRangeEveryReversing : public GenericVideoFilter {
     int every, length;
     bool audio;
-    PClip achild;
+    PClip achild; 
+
+#ifdef WRITEDEBUGINFO
+    std::string debugOutputFilename ="";
+#endif
+
 public:
     SelectRangeEveryReversing   (PClip _child, int _every, int _length, int _offset, bool _audio, IScriptEnvironment* env);
     PVideoFrame __stdcall GetFrame(int n, IScriptEnvironment* env);
